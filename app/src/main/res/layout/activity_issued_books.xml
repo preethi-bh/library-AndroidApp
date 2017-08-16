@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.libraryassistant.IssuedBooks">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appBarLayout2">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        style="@style/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Store the details of your Issued books to remind you their renew date "
+        android:layout_below="@+id/appBarLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView" />
+
+    <AutoCompleteTextView
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Book Name"
+        android:layout_below="@+id/editText7"
+        android:layout_alignLeft="@+id/editText7"
+        android:layout_alignStart="@+id/editText7" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Book Id"
+        android:inputType="number"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText5"
+        android:layout_alignRight="@+id/editText5"
+        android:layout_below="@+id/editText5"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Renew_Date"
+        />
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:onClick="Store"
+        android:text="Store" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/store"
+        android:layout_marginTop="27dp"
+        android:layout_toEndOf="@+id/date"
+        android:layout_toRightOf="@+id/date"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_menu_view" />
+
+
+</RelativeLayout>

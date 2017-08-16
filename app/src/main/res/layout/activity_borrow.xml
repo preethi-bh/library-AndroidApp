@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.libraryassistant.Borrow">
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appBarLayout">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        style="@style/textView"
+        android:textColor="@color/material_blue_grey_90"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:text="Search the Book id of required book from Search Tab"
+        android:layout_below="@+id/appBarLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        style="@style/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the Bookid"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        android:layout_above="@+id/bookid"
+        android:layout_alignLeft="@+id/bookid"
+        android:layout_alignStart="@+id/bookid"
+        android:layout_marginBottom="46dp" />
+
+    <EditText
+        android:id="@+id/bookid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp"
+        android:ems="10"
+        android:hint="Book ID"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="194dp" />
+
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="205dp"
+        android:onClick="borrow1"
+        android:text="Borrow" />
+
+
+
+</android.widget.RelativeLayout>

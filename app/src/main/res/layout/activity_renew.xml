@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.libraryassistant.Renew">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/textView"
+        android:text="Scan the barcode of the book to renew it"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp" />
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/scan_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Renew"
+        android:onClick="scanNow"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="96dp" />
+    <TextView
+        android:id="@+id/scan_format"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="true"
+        android:text="Format displayed here"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_above="@+id/scan_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp" />
+    <TextView
+        android:id="@+id/scan_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="true"
+        android:text="Content displayed here"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/scan_format"
+        android:layout_alignStart="@+id/scan_format" />
+
+</android.widget.RelativeLayout>
+

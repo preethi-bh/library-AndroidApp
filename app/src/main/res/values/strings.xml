@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Library Assistant</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_borrow">Borrow</string>
+    <string name="title_activity_search">Search Available Books</string>
+    <string name="title_activity_home2">Home</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_library_assistant">LibraryAssistant</string>
+    <string name="title_activity_issued_books">Issued Books</string>
+    <string-array name="books">
+        <item>Unix shell programming</item>
+        <item>Fundamentals of Data Structures</item>
+        <item>Engineering Chemistry</item>
+        <item>Software testing tools</item>
+        <item>Probability and statistics</item>
+        <item>Data structures using c</item>
+        <item>Computer organization and architecture</item>
+        <item>Database system concepts</item>
+        <item>Computer Networks</item>
+        <item>Java Fundamentals</item>
+        <item>Discrete mathematics and its applications</item>
+        <item>Engineering physics</item>
+        <item>Higher Engineering Mathematics</item>
+        <item>Basic electrical engineering</item>
+    </string-array>
+    <string-array name="Subject">
+        <item>MFCS</item>
+        <item>DLDCO</item>
+        <item>BEE</item>
+        <item>DBMS</item>
+        <item>STM</item>
+        <item>EP</item>
+        <item>LP</item>
+        <item>EC</item>
+        <item>DS</item>
+        <item>CP</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

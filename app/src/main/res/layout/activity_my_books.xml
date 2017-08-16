@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.libraryassistant.MyBooks">
+
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:onClick="issued"
+        android:text="My Issued Books" />
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="My Borrowed Books"
+        android:layout_below="@+id/button3"
+        android:onClick="borrowed"
+        android:layout_centerHorizontal="true" />
+</android.widget.RelativeLayout>
